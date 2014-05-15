@@ -24,3 +24,18 @@ The following command creates a `Schema.md` file in your `app/database` director
 ```sh
 $ php artisan migrate:schema
 ```
+
+## Example Output
+
+### users
+Field | Type | Length | Unsigned | Default
+--- | --- | --- | --- | ---
+id | INT | 10 | yes |
+name | VARCHAR | 128 (default) |  |
+
+### photos
+Field | Type | Length | Unsigned | Default
+--- | --- | --- | --- | ---
+id | INT | 10 | yes |
+user_id | INT | 10 | yes | 0
+url | VARCHAR | 128 (default) |  | 
